@@ -13,8 +13,17 @@ nmap <leader>so :source $MYVIMRC<cr>
 " Map Ctrl-s to write the file
 nmap <C-s> :w<cr>
 
+" Copy and paste from VIM buffer to clipboard
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p
+
+" To get out of insert mode quickly
 imap jk <esc>
 imap kj <esc>
+
+" Save file with ctrl-s
 imap <C-s> <esc>:w<cr>
 
 
@@ -40,24 +49,11 @@ set hlsearch				" Highlight all matches
 set autoread
 au CursorHold * checktime
 
-" PEP8 indentation for python files
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-
 " Configuration for html, css and js files
 au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
-
-" Flag badwhite space
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h matchh BadWhitespace /\s\+$/
+    \ softtabstop=2
+    \ shiftwidth=2
 
 
 " Spaces and tabs
@@ -98,7 +94,6 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Bundle 'Valloric/YouCompleteMe'
 
 " veer make sure all your plugins are added
 " above this
@@ -107,4 +102,3 @@ call vundle#end()
 
 filetype indent on
 filetype plugin on
-
