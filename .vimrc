@@ -96,6 +96,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'ctrlpvim/ctrlp.vim'
+Bundle 'dbeniamine/cheat.sh-vim'
 
 " veer make sure all your plugins are added
 " above this
@@ -105,6 +106,11 @@ call vundle#end()
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
+
+" Declare checkers for syntastic plugin
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_shell_checkers = ['shellcheck']
 
 filetype indent on
 filetype plugin on
