@@ -37,7 +37,6 @@ set showcmd				            " Show command in bottom bar
 set history=1000			        " Remember last 1000 commands
 set encoding=utf-8                  " Make sure VIM knows about encoding
 set scrolloff=4                     " Keep atleast 4 lines below cursor
-filetype off
 
 
 " Searching
@@ -95,6 +94,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
+Plugin 'valloric/youcompleteme'
 Plugin 'ctrlpvim/ctrlp.vim'
 Bundle 'dbeniamine/cheat.sh-vim'
 
