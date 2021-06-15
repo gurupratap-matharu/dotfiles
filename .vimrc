@@ -28,7 +28,7 @@ imap <C-s> <esc>:w<cr>
 
 
 " OPTIONS
-
+set ruler                           " Show line and column number at bottom
 set number				            " Display line numbers beside buffer
 set nocompatible			        " Don't maintain compatibility with Vi
 set hidden				            " Allow buffer w/o saving
@@ -94,7 +94,6 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'valloric/youcompleteme'
 Plugin 'ctrlpvim/ctrlp.vim'
 Bundle 'dbeniamine/cheat.sh-vim'
 
