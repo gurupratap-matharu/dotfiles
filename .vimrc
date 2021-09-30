@@ -1,5 +1,4 @@
 syntax enable				" Enable syntax processing
-set termguicolors
 
 " Use the space key as our leader.
 let mapleader = "\<Space>"
@@ -23,7 +22,7 @@ noremap <Leader>P "+p
 imap jk <esc>
 imap kj <esc>
 
-" Save file with ctrl-s
+" Save file with ctrl-s in insert mode
 imap <C-s> <esc>:w<cr>
 
 
