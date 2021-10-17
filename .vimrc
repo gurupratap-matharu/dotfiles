@@ -46,7 +46,6 @@ set hlsearch				" Highlight all matches
 
 " Autorelad vim file when changed on disk
 set autoread
-au CursorHold * checktime
 
 " Configuration for html, css and js files
 au BufNewFile,BufRead *.js, *.html, *.css
@@ -94,7 +93,6 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'ctrlpvim/ctrlp.vim'
-Bundle 'dbeniamine/cheat.sh-vim'
 
 " veer make sure all your plugins are added
 " above this
