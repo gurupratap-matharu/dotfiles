@@ -51,13 +51,6 @@ set hlsearch				" Highlight all matches
 " Autorelad vim file when changed on disk
 set autoread
 
-" Configuration for html, css and js files
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ softtabstop=2
-    \ shiftwidth=2
-
-
 " Spaces and tabs
 
 set tabstop=4				" 4 space tab
@@ -97,6 +90,10 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'dense-analysis/ale'
+Plugin 'arcticicestudio/nord-vim'
 
 " veer make sure all your plugins are added
 " above this
