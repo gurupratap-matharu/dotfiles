@@ -30,7 +30,7 @@ imap kj <esc>
 imap <C-s> <esc>:w<cr>
 
 
-" OPTIONS
+" Options
 set ruler                           " Show line and column number at bottom
 set number				            " Display line numbers beside buffer
 set nocompatible			        " Don't maintain compatibility with Vi
