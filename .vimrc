@@ -169,3 +169,8 @@ set signcolumn=yes
 " source for other completion plugins, like Deoplete.
 let g:ale_completion_enabled = 1
 set completeopt=menuone,noselect
+
+
+" Set papercolor as default colorscheme
+colorscheme PaperColor
+set background=dark
